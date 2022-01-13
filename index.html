@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <title>动画与转换</title>
+    <style>
+        .animation01{
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            -webkit-transform: rotate(45deg);
+        }
+
+        .animation02{
+            width: 200px;
+            height: 200px;
+            background-color: tomato;
+         
+        }
+       .animation03{
+           width: 200px;
+           height: 200px;
+           background-color: turquoise;
+           transform: skew(30deg,45deg);
+       }
+       .animation04{
+           width: 100px;
+           height: 50px;
+           background-color: rebeccapurple;
+           animation: myfirst 2s ease infinite alternate running;
+       }
+       .animation05{
+           width: 100px;
+           height: 50px;
+           background-color: red;
+           animation: mysec 2s ease-in infinite alternate running;
+       }
+       .animation06{
+           width: 100px;
+           height: 50px;
+           background-color: rosybrown;
+           animation: mythree 2s ease-out infinite alternate running;
+       }
+       .animation07{
+           width: 100px;
+           height: 50px;
+           background-color: gold;
+           animation: myfo 2s ease-in-out infinite alternate running;
+       }
+       .animation08{
+           width: 100px;
+           height: 50px;
+           background-color: hotpink;
+           animation: myfif 2s linear infinite alternate running;
+       }
+       @keyframes myfirst{
+           form{width: 100px;}
+           to{width: 200px;}
+       }
+       @keyframes mysec{
+           form{width: 100px;}
+           to{width: 200px;}
+       }
+       @keyframes mythree{
+           form{width: 100px;}
+           to{width: 200px;}
+       }
+       @keyframes myfo{
+           form{width: 100px;}
+           to{width: 200px;}
+       }
+       @keyframes myfif{
+           form{width: 100px;}
+           to{width: 200px;}
+       }
+    </style>
+</head>
+<body>
+    <div class="animation01">hello!</div>
+    <div class="animation02"></div>
+    <div class="animation04">ease</div>
+    <div class="animation05">ease-in</div>
+    <div class="animation06">ease-out</div>
+    <div class="animation07">ease-in-out</div>
+    <div class="animation08">linear</div>
+</body>
+</html>
